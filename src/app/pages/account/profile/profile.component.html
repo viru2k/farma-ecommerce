@@ -1,0 +1,80 @@
+<app-breadcrumb [title]="'Profile'" [breadcrumb]="'Profile'"></app-breadcrumb>
+<!-- personal deatail section start -->
+<section class="contact-page register-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>DATOS PERSONALES</h3>
+                <form class="theme-form">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label for="name">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre" required="">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email">Apellido</label>
+                            <input type="text" class="form-control" id="last-name" placeholder="Ingrese su apellido" required="">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="review">Telefono</label>
+                            <input type="text" class="form-control" id="review" placeholder="Ingrese su teléfono" required="">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email">Correo electrónico</label>
+                            <input type="text" class="form-control" id="email" placeholder="Ingrese su correo electrónico" required="">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="review">Dejanos un mensaje</label>
+                            <textarea class="form-control mb-0" placeholder="Escriba lo que creas que nos puede ser de utilidad" id="exampleFormControlTextarea1" rows="6"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section ends -->
+<!-- address section start -->
+<section class="contact-page register-page section-b-space">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Dirección de envio</h3>
+                <form class="theme-form">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label for="name">Empresa / persona</label>
+                            <input type="text" class="form-control" id="home-ploat" placeholder="Compañia / personal" required="">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="name">Dirección *</label>
+                            <input type="text" class="form-control" id="address-two" placeholder="Dirección" required="">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email">Código postal *</label>
+                            <input type="text" class="form-control" id="zip-code" placeholder="Código postal" required="">
+                        </div>
+                        <div class="col-md-6 select_input">
+                            <label for="review">País *</label>
+                            <select class="form-control" size="1">
+                                <option value="India">Argentina</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="review">Ciudad *</label>
+                            <input type="text" class="form-control" id="city" placeholder="Ciudad" required="">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="review">Localidad *</label>
+                            <input type="text" class="form-control" id="region-state" placeholder="Localidad" required="">
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn btn-sm btn-solid" type="submit">Guardar datos</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section ends -->
