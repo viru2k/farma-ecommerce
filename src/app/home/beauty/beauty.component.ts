@@ -20,21 +20,31 @@ export class BeautyComponent implements OnInit, OnDestroy {
 
   constructor(public productService: ProductService) {
       this.productService.getProducts.subscribe(response => 
-        this.products = response.filter(item => item.type == 'beauty')
+        this.products = response.filter(item => item.type == 'perfumeria')
       );
   }
 
   // Sliders
   public sliders = [{
-    title: 'save upto 20%',
-    subTitle: 'creative & decor',
-    image: 'assets/images/slider/15.jpg'
+    title: '',
+    subTitle: '',
+    image: 'assets/images/slider/1.jpg'
   }, {
-    title: 'save upto 10%',
-    subTitle: 'pre-made & custom',
-    image: 'assets/images/slider/16.jpg'
+    title: '',
+    subTitle: '',
+    image: 'assets/images/slider/_1.jpg'
   }];
 
+/* 
+  public sliders = [{
+    title: 'Del 1 al 24 de septiembre',
+    subTitle: 'Ofertas especiales',
+    image: 'assets/images/slider/1.jpg'
+  }, {
+    title: 'Ahorre el 10%',
+    subTitle: 'En perfurmeria',
+    image: 'assets/images/slider/_1.jpg'
+  }]; */
   // Blogs
   public blogs = [{
     image: 'assets/images/blog/20.jpg',
@@ -60,7 +70,7 @@ export class BeautyComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     // Change color for this layout
-    document.documentElement.style.setProperty('--theme-deafult', '#f0b54d');
+    document.documentElement.style.setProperty('--theme-deafult', '#219ebc');
   }
 
   ngOnDestroy(): void {
@@ -69,3 +79,6 @@ export class BeautyComponent implements OnInit, OnDestroy {
   }
 
 }
+
+
+// db363e rojo boton , b4b5ba texto

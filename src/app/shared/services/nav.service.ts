@@ -51,8 +51,87 @@ export class NavService {
 		},*/
 		{
 			title: 'Productos', type: 'sub', active: false, children: [
+
 				{
-					title: 'Sidebars', type: 'sub', active: false, children: [
+					path: '/', title: 'Belleza y cuidado', type: 'sub',  megaMenu: true, active: false, children: [
+						{
+							
+							path: '/catalogo' ,title: 'Cuidado facial',  type: 'link', active: false, children: [
+								{ path: '/catalogo', title: 'Aderma',  type: 'link' },
+								{ path: '/catalogo', title: 'Avene',  type: 'link' },
+								{ path: '/catalogo', title: 'Bioderme',  type: 'link' },
+								{ path: '/catalogo', title: 'Duocray',  type: 'link' }
+							]
+						},
+					  {
+						  title: 'Cuidado corporal',  type: 'link', active: false, children: [
+							{ path: '/home/fashion', title: 'Aderma',  type: 'link' },
+							{ path: '/home/fashion', title: 'Avene',  type: 'link' },
+							{ path: '/home/fashion', title: 'Bioderme',  type: 'link' },
+							{ path: '/home/fashion', title: 'Duocray',  type: 'link' },
+							{ path: '/home/fashion', title: 'Isdin',  type: 'link' },
+							{ path: '/home/fashion', title: 'La Roche posay',  type: 'link' },
+							{ path: '/home/fashion', title: 'Vichi',  type: 'link' },
+						  ]
+					  },
+					  {
+						  title: 'Cuidado capilar',  type: 'link', active: false, children: [
+							{ path: '/home/fashion', title: 'Bioderme',  type: 'link' },
+							{ path: '/home/fashion', title: 'Duocray',  type: 'link' },
+							{ path: '/home/fashion', title: 'Isdin',  type: 'link' },
+							{ path: '/home/fashion', title: 'La Roche posay',  type: 'link' },
+							{ path: '/home/fashion', title: 'Vichi',  type: 'link' },
+						  ]
+					  },
+					  {
+						title: 'Protección solar',  type: 'link', active: false, children: [
+							{ path: '/home/fashion', title: 'Aderma',  type: 'link' },
+							{ path: '/home/fashion', title: 'Avene',  type: 'link' },
+						]
+					},
+					]
+				},
+				{
+					title: 'Make up', type: 'sub', active: false, children: [
+						{ path: '/home/fashion', title: 'Aderma',  type: 'link' },
+						{ path: '/home/fashion', title: 'Avene',  type: 'link' },
+					]
+				},
+				{
+					title: 'Cuidado personal', type: 'sub', active: false, children: [
+					  { path: '/home/fashion', title: 'Mama y bebes', type: 'link' },
+					  { path: '/home/fashion', title: 'COVID', type: 'link' },
+					  { path: '/home/fashion', title: 'CUidado bucal', type: 'link' }
+					]
+				},
+				{
+					path: '/home/fashion', title: 'Relojes', type: 'link'
+				},
+				{
+					title: 'Salud', type: 'sub', active: false, children: [
+					  { path: '/home/fashion', title: 'Electromedicina', type: 'link' },
+					  { path: '/home/fashion', title: 'Productos ortopedicos', type: 'link' },
+					  { path: '/home/fashion', title: 'Suplementos', type: 'link' },
+					]
+				},
+				{
+					title: 'Fragancias', type: 'sub', active: false, children: [
+					  { path: '/home/fashion', title: 'Hombre', type: 'link' },
+					  { path: '/home/fashion', title: 'Mujer', type: 'link' },
+					  { path: '/home/fashion', title: 'Niños', type: 'link' },
+					  {
+						  path: '/home/fashion', title: 'Marcas', type: 'link', active: false, children: [
+							  { path: '/home/fashion', title: 'Adolfo domingues',  type: 'link' },
+							  { path: '/home/fashion', title: 'Armando bassi',  type: 'link' },
+							  { path: '/home/fashion', title: 'Antonio banderas',  type: 'link' },
+							  { path: '/home/fashion', title: 'Calvin Klein',  type: 'link' }
+						  ]
+					  },
+					]
+				},
+		
+				{
+					title: 'Muestras de Sidebars', type: 'sub', active: false, children: [
 						{ path: '/shop/product/left/sidebar/trim-dress', title: 'Sidebar izquierdo', type: 'link' },
 						{ path: '/shop/product/right/sidebar/trim-dress', title: 'Sidebar derecho', type: 'link' },
 						{ path: '/shop/product/no/sidebar/trim-dress', title: 'Sin sidebar', type: 'link' }
@@ -159,10 +238,10 @@ export class NavService {
 			title: 'Belleza y cuidado', type: 'sub', megaMenu: true, active: false, children: [
 				{
 					title: 'Cuidado facial',  type: 'link', active: false, children: [
-						{ path: '/home/fashion', title: 'Aderma',  type: 'link' },
-						{ path: '/home/fashion', title: 'Avene',  type: 'link' },
-						{ path: '/home/fashion', title: 'Bioderme',  type: 'link' },
-						{ path: '/home/fashion', title: 'Duocray',  type: 'link' }
+						{ path: '/catalogo', title: 'Aderma',  type: 'link' },
+						{ path: '/catalogo', title: 'Avene',  type: 'link' },
+						{ path: '/catalogo', title: 'Bioderme',  type: 'link' },
+						{ path: '/catalogo', title: 'Duocray',  type: 'link' }
 					]
 				},
 			  {
@@ -206,9 +285,7 @@ export class NavService {
 			  { path: '/home/fashion', title: 'CUidado bucal', type: 'link' }
 			]
 		},
-		{
-			path: '/home/fashion', title: 'Relojes', type: 'link'
-		},
+	
 		{
 			title: 'Salud', type: 'sub', active: false, children: [
 			  { path: '/home/fashion', title: 'Electromedicina', type: 'link' },
